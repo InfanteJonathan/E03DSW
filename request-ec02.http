@@ -1,20 +1,25 @@
-@server= https://infantejonathan-upgraded-space-engine-9pwgrwpv9gwfpw46-8080.preview.app.github.dev/
+#@server= https://infantejonathan-upgraded-space-engine-9pwgrwpv9gwfpw46-8080.preview.app.github.dev/
+
+@server = https://evc03.onrender.com
+###
+
+@apiserver = {{server}}/api/curso
 
 ###
-GET  {{server}}/
-
+GET {{server}}/
 ###
-GET  {{server}}/codigo
+GET {{server}}/codigo
 ###
-GET  {{server}}/nombre-completo
+GET {{server}}/nombre-completo
 ###
-GET  {{server}}/listar
+GET {{apiserver}}/listar
 ###
-POST   {{server}}/nuevo
+POST {{apiserver}}/nuevo
 Content-Type: application/x-www-form-urlencoded
-nombre=Algoritmos&creditos=3
+
+nombre=Machine Learning&creditos=4
 ###
-DELETE   {{server}}/eliminar
+DELETE {{apiserver}}/eliminar
 Content-Type: application/x-www-form-urlencoded
 
 id=1
