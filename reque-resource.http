@@ -1,0 +1,60 @@
+@server = https://infantejonathan-upgraded-space-engine-9pwgrwpv9gwfpw46-8080.preview.app.github.dev
+
+###
+GET  {{server}}
+
+###
+GET  {{server}}/cursos
+
+###
+GET  {{server}}/cursos/2
+
+###
+GET  {{server}}/cursos?size=2
+
+###
+GET  {{server}}/cursos?size=2&page=1
+
+###
+GET  {{server}}/cursos?sort=nombre,desc
+
+###
+POST   {{server}}/cursos
+Content-Type: application/json
+
+{"nombre" : "Compiladores", "creditos": 5}
+
+###
+DELETE {{server}}/cursos/4
+
+###
+PATCH    {{server}}/cursos/2
+Content-Type: application/json
+
+{"creditos": 5}
+
+###
+GET  {{server}}/profile/cursos
+
+###
+GET  {{server}}/cursos/search/findByNombre?nombre=Logistica
+
+
+###
+GET  {{server}}/carreras
+
+###
+POST   {{server}}/carreras
+Content-Type: application/json
+
+{"nombre" : "Contabilidad"}
+
+###
+GET  {{server}}/cursos/2/carrera
+
+###
+GET  {{server}}/carreras/1
+
+###
+GET  {{server}}/carreras/1/cursos
+
