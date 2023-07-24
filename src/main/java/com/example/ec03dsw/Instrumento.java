@@ -1,5 +1,7 @@
 package com.example.ec03dsw;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
