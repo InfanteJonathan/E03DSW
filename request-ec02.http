@@ -3,7 +3,7 @@
 @server = https://evc03.onrender.com
 ###
 
-@apiserver = {{server}}/api/curso
+@api = {{server}}/api/ec3
 
 ###
 GET {{server}}/
@@ -12,7 +12,7 @@ GET {{server}}/codigo
 ###
 GET {{server}}/nombre-completo
 ###
-GET {{apiserver}}/listar
+GET {{api}}/
 ###
 POST {{apiserver}}/nuevo
 Content-Type: application/x-www-form-urlencoded
