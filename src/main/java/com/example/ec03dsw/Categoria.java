@@ -12,7 +12,7 @@ import jakarta.persistence.OrderBy;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Categoria")
+@Table(name = "categorias")
 public class Categoria {
 
     @Id

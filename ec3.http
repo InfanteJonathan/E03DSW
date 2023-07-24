@@ -1,0 +1,10 @@
+@server = https://evc03.onrender.com
+###
+
+@api = {{server}}/api/ec3
+
+###
+
+GET {{api}}/categorias
+
+###

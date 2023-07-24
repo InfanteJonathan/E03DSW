@@ -10,7 +10,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Instrumento")
+@Table(name = "instrumentos")
 public class Instrumento {
 
     @Id
@@ -21,9 +21,17 @@ public class Instrumento {
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_categoria")
-    private Categoria id_categoria;
+    private Categoria categoria;
 
     // Getters y setters (puedes generarlos automáticamente o escribirlos manualmente)
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
 
     public Long getId() {
         return id;
@@ -41,13 +49,7 @@ public class Instrumento {
         this.nombre = nombre;
     }
 
-    public Categoria getId_categoria() {
-        return id_categoria;
-    }
-
-    public void setId_categoria(Categoria id_categoria) {
-        this.id_categoria = id_categoria;
-    }
+    
 
     
 }
